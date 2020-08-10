@@ -80,11 +80,11 @@ table tr:hover{
   }
 
 .tahe{
-  background: green;
-  background: -webkit-linear-gradient(rgb(74, 194, 74),rgb(161, 255, 161));
-  background: -o-linear-gradient(rgb(74, 194, 74),rgb(161, 255, 161));
-  background: -moz-linear-gradient(rgb(74, 194, 74),rgb(161, 255, 161));
-  background: linear-gradient(rgb(74, 194, 74),rgb(161, 255, 161));   
+  background: -webkit-linear-gradient(rgb(59, 136, 59),rgb(92, 177, 92));
+  background: -o-linear-gradient(rgb(59, 136, 59),rgb(92, 177, 92));
+  background: -moz-linear-gradient(rgb(59, 136, 59),rgb(92, 177, 92));
+  background: -ms-linear-gradient(rgb(59, 136, 59),rgb(92, 177, 92));
+  background-image : linear-gradient(rgb(59, 136, 59),rgb(92, 177, 92));
   border: 2px solid #000000;
   border-top-left-radius:  5px;
   border-top-right-radius: 5px;
