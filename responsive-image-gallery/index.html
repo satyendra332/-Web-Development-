@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        header {
+            text-align: center;
+            color: #616161;
+            font-size: large;
+        }
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .container {
+            position: relative;
+            width: 50%;
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 90%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #777777;
+            color: #f4f4f4;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .container {
+                width: 40%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>all things wellness</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem praesentium atque repellat cumque
+            consectetur tempore aperiam harum? Hic culpa ipsa voluptatem est unde voluptate dignissimos laudantium sed
+            neque. Minus, doloremque. </p>
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <img src="https://th.bing.com/th/id/OIP._42kEM6BQl0WDuL2iyw2jwHaEo?w=292&h=182&c=7&o=5&dpr=1.25&pid=1.7"
+                alt="Greenery" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text">Greenery</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <img src="https://th.bing.com/th/id/OIP._42kEM6BQl0WDuL2iyw2jwHaEo?w=292&h=182&c=7&o=5&dpr=1.25&pid=1.7"
+                alt="Red trees" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text">Red trees</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <img src="https://th.bing.com/th/id/OIP._42kEM6BQl0WDuL2iyw2jwHaEo?w=292&h=182&c=7&o=5&dpr=1.25&pid=1.7"
+                alt="Sky" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text">Sky</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <img src="https://th.bing.com/th/id/OIP._42kEM6BQl0WDuL2iyw2jwHaEo?w=292&h=182&c=7&o=5&dpr=1.25&pid=1.7"
+                alt="Mountains" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text">Mountains</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
